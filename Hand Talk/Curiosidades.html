@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História das Pessoas Surdas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <style>
+        /* Estilos CSS para a barra de navegação */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .content {
+            background-color: #7b9d93;
+            position: absolute;
+            padding: 50px;
+            border-radius: 15px;
+            color: Black
+        }
+        .navbar {
+            background-color: #81d3ba;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: #085a42;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #81d3ba;
+            color: #085a42;
+        }
+
+        /* Estilos CSS para o formulário de contato */
+        .container {
+            padding: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label, input, textarea {
+            background-color: #81d3ba;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 10px;
+            color: black;
+            font-size: 15px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .footer {
+            background-color: #085a42;
+            color: #81d3ba;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Estilos CSS para o conteúdo */
+        .content {
+            padding: 20px;
+        }
+
+        /* Estilos CSS para a janela flutuante */
+/* Estilos CSS para a janela flutuante */
+.popup {
+    position: fixed; /* Alterado para "fixed" para manter a posição em relação à visualização da página */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    border-radius: 15px;
+    background-color: #367461;
+    color: black;
+    z-index: 1000; /* Certifica-se de que a janela flutuante está acima de outros elementos */
+    display: none; /* Adicionado para inicialmente ocultar a janela flutuante */
+}
+
+.popup.open {
+    display: block; /* Exibe a janela flutuante quando a classe "open" é adicionada */
+}
+
+.popup-header {
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    color: black;
+    font-size: 15px;
+    color: #81d3ba;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end; /* Alinha o botão de fechar à direita */
+}
+
+.popup-content {
+    padding: 20px;
+}
+
+
+        /* Estilos CSS para os campos de texto na janela flutuante */
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Estilo CSS para o botão na janela flutuante */
+        .botaoZoom .button {
+            
+            background-color: #085a42;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            
+            }
+            .botaoZoom {
+            overflow: hidden;
+            transition: transform 0.3s;
+            display: inline-block;
+            border-radius: 15px;
+            margin: 0 20px; /* Ajuste a margem para definir o espaçamento entre os botões */
+        }
+        .botaoZoom:hover {
+            transform: scale(1.1);
+        }
+
+        .btn-group .button:not(:last-child) {
+            border-bottom: none; /* Prevent double borders */
+            }
+
+        .btn-group .button:hover {
+            background-color: deepskyblue;
+            cursor: pointer;
+        }
+        .botaoabrirfechar{
+            background-color: #085a42;
+            border: none;
+            padding: 15px 50px;
+            border-radius: 10px;
+            color: white;
+        }
+        .botaoabrirfechar{
+            .botaoZoom {
+            overflow: hidden;
+            transition: transform 0.3s;
+            display: inline-block;
+            border-radius: 15px;
+            margin: 0 20px; /* Ajuste a margem para definir o espaçamento entre os botões */
+        }
+        
+
+        }
+        .botaoabrirfechar:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg ">
+  
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Hand Talk</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Inicio.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Historia.html">História</a>
+              </li>
+              </li>
+
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Login.php">Login</a>
+              </li>
+              </ul>
+            
+        
+          </div>
+        </div>
+      </nav>
+
+    <!-- Janela flutuante -->
+    <div class="popup" id="myPopup">
+        <div class="popup-header">
+            <button class="botaoabrirfechar" onclick="closePopup()">Fechar</button>
+        </div>
+        <div class="popup-content">
+            <div class="container mt-5">
+                <div class="d-flex justify-content-center">
+                    <!-- Botão 1 -->
+                    <a href="Historia.html" class="botaoZoom">
+                        <img src="His.png" alt="Botão 1">
+                    </a>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <!-- Botão 1 -->
+                    <a href="Curiosidades.html" class="botaoZoom">
+                        <img src="Curi.png" alt="Botão 1">
+                    </a>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <!-- Botão 1 -->
+                    <a href="SobreoProjeto.html" class="botaoZoom">
+                        <img src="Sobre.png" alt="Botão 1">
+                    </a>
+                </div>
+            </div>
+          </nav>
+        </div>
+    </div>
+
+    <!-- Botão para abrir a janela flutuante -->
+    <button class="botaoabrirfechar" onclick="openPopup()">Abrir Janela</button>
+
+    <!-- JavaScript para abrir e fechar a janela flutuante -->
+    <script>
+        function openPopup() {
+            document.getElementById("myPopup").classList.add("open");
+        }
+
+        function closePopup() {
+            document.getElementById("myPopup").classList.remove("open");
+        }
+    </script>
+    <div class="content">
+        <h1>Curiosidades sobre Pessoas Surdas</h1>
+        <p>Aqui estão algumas curiosidades interessantes sobre pessoas surdas:</p>
+        <ul>                
+            <li>Diversidade Linguística: Assim como as línguas faladas, as línguas de sinais também variam entre países e regiões, refletindo a diversidade cultural das comunidades surdas.</li>
+                
+            <li>Cochilos Vibratórios: Algumas pessoas surdas usam despertadores vibratórios, que emitem vibrações para acordá-las, em vez de sons audíveis.</li>
+                
+            <li>Expressões Faciais: As expressões faciais desempenham um papel crucial na comunicação em línguas de sinais, transmitindo nuances e emoções.</li>
+                
+            <li>Mitos e Estigmas: A falta de compreensão sobre a surdez pode levar a mitos e estigmas, como a ideia de que todas as pessoas surdas leem lábios.</li>
+                
+            <li>Audição Residual: Algumas pessoas surdas têm alguma audição residual e podem se beneficiar de aparelhos auditivos.</li>
+                
+            <li>Identidade Surda: A identidade surda vai além da condição auditiva e pode incluir orgulho e conexão com a comunidade surda.</li>
+                
+            <li>Tecnologia Assistiva: Dispositivos como implantes cocleares e aparelhos auditivos ajudam a melhorar a qualidade de vida das pessoas surdas.</li>
+                
+            <li>Comédia Surda: Existem comediantes surdos que incorporam experiências surdas em seus shows, proporcionando entretenimento e conscientização.</li>
+                
+            <li>Cultura Visual: A cultura surda é frequentemente descrita como uma cultura visual, destacando a importância da visão nas interações sociais.</li>
+                
+            <li>Educação Bilíngue: Muitas crianças surdas se beneficiam da educação bilíngue, que inclui a língua de sinais e a língua falada.</li>
+                
+            <li>Intérpretes de Língua de Sinais: Os intérpretes de língua de sinais desempenham um papel vital na facilitação da comunicação entre surdos e ouvintes.
+                                
+            <li>Artes Visuais: Muitos artistas surdos se destacam em formas visuais de arte, como pintura e escultura.</li>
+                
+            <li>Acessibilidade em Teatros: Algumas produções teatrais oferecem intérpretes de língua de sinais para tornar o teatro mais acessível.</li>
+                
+            <li>Esportes Surdos: Existem competições esportivas específicas para atletas surdos, destacando suas habilidades atléticas.</li>
+                
+            <li>Empregabilidade: A surdez não deve ser uma barreira para o emprego, e muitas pessoas surdas são bem-sucedidas em várias profissões.</li>
+                
+            <li>Cães Surdos: Assim como cães ouvintes, existem cães treinados para auxiliar pessoas surdas, alertando sobre sons importantes.</li>
+                
+            <li>Telefonia Visual: Serviços de videochamada e mensagens visuais são essenciais para a comunicação à distância para pessoas surdas.</li>
+                
+            <li>Literatura Surda: Autores surdos contribuem para a literatura com obras que refletem suas experiências e perspectivas.</li>
+                
+            <li>Ensino de Línguas de Sinais: Algumas escolas oferecem cursos de língua de sinais como parte do currículo, promovendo a inclusão desde cedo.</li>
+            
+    </div>
+
+    <footer style="background-color: #81d3ba; color: #085a42; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%;">
+        © 2023 Hand Talk
+    </footer>
+</body>
+</html>
